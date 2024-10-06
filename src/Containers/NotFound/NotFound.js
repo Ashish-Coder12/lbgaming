@@ -6,8 +6,9 @@ import Cart from '../../Components/Cart/Cart';
 import AnimatedHome from '../AnimatedPage/AnimatedHome';
 import { motion } from "framer-motion";
 
-const navigate = useNavigate();
 const NotFound = props => {
+const navigate = useNavigate();
+
   const {
     cartDisplayed,
     handleCloseCart,
