@@ -90,6 +90,10 @@ a {
     min-height: 100%;
     z-index: -1;
     background-attachment: fixed;
+    background-image: url('https://wallpapers.com/images/hd/gaming-pc-pictures-5w76o7beewp8o58e.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
 .splash {
@@ -232,7 +236,7 @@ a {
 
     .buttons {
         width: 276px;
-        height: 190px;
+        height: 65px;
         align-self: center;
         flex-direction: column;
     }
@@ -252,7 +256,24 @@ a {
     }
 }
 
+.overlay {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.7); /*can be anything, of course*/
+}
 @media screen and (max-width: 500px) {
+    .video {
+        background-image: url('https://www.lightingcompany.co.uk/blog/wp-content/uploads/2023/10/gamer_M8292_AMB-3-626x1024.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        backdrop-filter: brightness(10%);
+      }
     .left,
     .splash {
         width: 276px;
@@ -260,7 +281,7 @@ a {
 
     .splash {
         padding: 10px 35px 10px 35px;
-        height: 60px;
+        height: 147px;
         justify-content: center;
     }
 

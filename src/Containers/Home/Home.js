@@ -121,10 +121,9 @@ const Home = props => {
               openGamePage={openGamePage}
       /> : null}
         <div className={styles.home}>
-
-                <video autoPlay muted loop className={styles.video}>
-                  <source src={require("../../Resources/image/pyke.mp4")} type="video/mp4" />
-                </video>
+                <div className={styles.video}>
+                  <div className={styles.overlay}></div>
+                </div>
 
                 <NavBar 
                   handleHover={handleHover} 
