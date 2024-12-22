@@ -94,7 +94,7 @@ const Cart = props => {
                                   onMouseLeave={handleHover} 
                                   style={{ color: hoverState[24].hovered ? "#92f" : "#fff" }} 
                                   aria-label="Checkout"
-                                  onClick={openModal}
+                                  onClick={()=>window.open("https://wa.me/+919121979529")}
                                 >
                                     Checkout
                                     <Right 
