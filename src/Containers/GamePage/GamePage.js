@@ -146,6 +146,7 @@ const GamePage = props => {
                     setCarouselState={setCarouselState}
                     hoverState={hoverState}
                     handleHover={handleHover}
+                    className={styles.gameSlider}
                   />}
                   <div className={styles.gameInfo}>
                     <div className={styles.about}>

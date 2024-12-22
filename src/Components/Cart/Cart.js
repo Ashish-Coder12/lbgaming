@@ -113,8 +113,8 @@ const Cart = props => {
                                     <h3 className={styles.payheader}>Pay on this</h3>
                                     <img className={styles.qrimage} src={Qr} alt="" />
                                     <h4 > ₹{newTotal}</h4>
-                                    <h5 className={styles.footerqr}>After Paying send <br/>
-                                    Screenshot <a target='_blank' href="https://www.instagram.com/l.b.gaming_port?igsh=YTVpOGpmc3FpeW1h">here</a></h5>
+                                    {/* <h5 className={styles.footerqr}>After Paying send <br/>
+                                    Screenshot <a target='_blank' href="https://www.instagram.com/l.b.gaming_port?igsh=YTVpOGpmc3FpeW1h">here</a></h5> */}
                             </div>
                     </div>
                     :<></> }

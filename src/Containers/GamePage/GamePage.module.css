@@ -450,6 +450,9 @@ header h1 {
 }
 
 @media screen and (max-width: 590px) {
+    .react-slideshow-container img{
+        aspect-ratio: 3/4 !important;
+    }
     header h1 {
         font-size: 20px;
         padding-top: 6px;
