@@ -268,7 +268,7 @@ a {
 }
 @media screen and (max-width: 500px) {
     .video {
-        background-image: url('https://www.lightingcompany.co.uk/blog/wp-content/uploads/2023/10/gamer_M8292_AMB-3-626x1024.jpg');
+        background-image: url('../../Images/phoneBackground.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
