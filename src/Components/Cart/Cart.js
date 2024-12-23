@@ -34,13 +34,18 @@ const Cart = props => {
     })
 
     function sendToWhatsapp(){
-        let String = `Hii LB,%0AI want to purchase %0A`
+        let String = `Hii LB,\nI want to purchase \n`
         cart.map((item,index)=>{
-            String += `${index+1})${item.name} %0A`
+            String += `${index+1})${item.name} \n`
         })
-        String += `from you `
+        String += `from you.`
         console.log(String);
-        window.open("https://wa.me/+919121979529?text="+String)
+        navigator.clipboard.writeText(String);
+        setModalOpen(true)
+        setTimeout(() => {
+            setModalOpen(false)  
+            handleCloseCart()
+        }, 1000);
     }
     
 
@@ -120,11 +125,7 @@ const Cart = props => {
                         <div className={styles.closeModal} onClick={openModal}>
                         </div>
                         <div className={styles.modalInner} >
-                                    <h3 className={styles.payheader}>Pay on this</h3>
-                                    <img className={styles.qrimage} src={Qr} alt="" />
-                                    <h4 > ₹{newTotal}</h4>
-                                    {/* <h5 className={styles.footerqr}>After Paying send <br/>
-                                    Screenshot <a target='_blank' href="https://www.instagram.com/l.b.gaming_port?igsh=YTVpOGpmc3FpeW1h">here</a></h5> */}
+                                   <p>Text copied Successfully</p>
                             </div>
                     </div>
                     :<></> }

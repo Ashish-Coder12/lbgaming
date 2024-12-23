@@ -195,13 +195,9 @@
 }
 .modalInner{
     background-color: #fff;
-    height: 400px;
-    width: 300px;
-    border-radius: 20px;
+    border-radius: 10px;
     z-index: 200;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 30px 50px;
 }
 .closeModal{
     position: absolute;
