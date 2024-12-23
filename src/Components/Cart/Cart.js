@@ -32,6 +32,16 @@ const Cart = props => {
             setTotal(newTotal);
         }
     })
+
+    function sendToWhatsapp(){
+        let String = `Hii LB,%0AI want to purchase %0A`
+        cart.map((item,index)=>{
+            String += `${index+1})${item.name} %0A`
+        })
+        String += `from you `
+        console.log(String);
+        window.open("https://wa.me/+919121979529?text="+String)
+    }
     
 
     const variants = {
@@ -94,7 +104,7 @@ const Cart = props => {
                                   onMouseLeave={handleHover} 
                                   style={{ color: hoverState[24].hovered ? "#92f" : "#fff" }} 
                                   aria-label="Checkout"
-                                  onClick={()=>window.open("https://wa.me/+919121979529")}
+                                  onClick={()=>sendToWhatsapp()}
                                 >
                                     Checkout
                                     <Right 
